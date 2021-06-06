@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-app.get("/", function(req, res){
-  res.send("it is  working dude");
+app.get("/test", function(req, res){
+  res.sendFile('/test.html');
 });
 app.get("/home", function(req, res){
   res.send("It is really working dude");
