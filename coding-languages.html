@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*Lobster*/
+    @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');/*Maven Pro*/
+      html {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .new_upperBar{
+        width:100%;
+        background-color: lightBlue;
+        height: 11vh;
+        min-height: 11vh;
+        max-height: 11vh;
+        margin-bottom:7px;
+        border-bottom:4px solid #183e14;
+      }
+
+      .new_main{
+        background-color: white;
+        font-family: "Maven Pro";
+        padding: 12px;
+        padding-left: 24px;
+        font-size: 20px;
+        width: 80%;
+        border: none;
+        outline: none;
+        box-shadow:
+          0 -6px white,
+          0 6px white,
+          -15px 0 4px -3px #9ecaed,
+          15px 0 4px -3px #9ecaed;
+      }
+      #logo-link {
+        text-decoration: none;
+        color: black;
+      }
+      #logo {
+        margin-left: 20px;
+        padding-top: 0;
+        font-size: 49px;
+        font-family: "Lobster";
+        text-shadow:
+        -2px -2px 0 #ffffff,
+        2px -2px 0 #ffffff,
+        -2px 2px 0 #ffffff,
+        2px 2px 0 #ffffff;
+      }
+
+      .content-table{
+        border-collapse: collapse;
+        margin:25px 0;
+        font-size: 0.99em;
+        min-width: 400px;
+      }
+      .content-table thead tr{
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;/*If we dont set this, border radius might not work sub cell*/
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+      .content-table th, .content-table td {
+        padding: 12px 15px;
+      }
+      .content-table tbody tr{
+        border-bottom: 1px solid #dddddd;
+      }
+      /*here we target all rows except the ones with even number*/
+      .content-table tbody tr:nth-of-type(even){
+        background-color: #f3f3f3;
+      }
+      /**here we target last row, to change its bottom border properties*/
+      .content-table tbody tr:last of type {
+        border-bottom: 2px solid #009879;
+      }
+      .content-table tbody tr:hover {
+        background-color: #00b362;
+        cursor: pointer;
+      }
+
+
+    </style>
+    <title></title>
+  </head>
+  <body>
+
+    <div class="new_upperBar">
+      <span id="logo"><a href="/index.html" id="logo-link">eumaps.org</a></span>
+    </div>
+
+    <div class="new_main">
+
+      <div id="pageContent">
+        <div id="articlesPage">
+          <div id="codingPage">
+            <h1>MOST SOUGHT CODING SKILLS</h1>
+            <p>Most in-demand coding skills based on job advertisements on <a href="https://stackoverflow.com/jobs">stackoverflow</a> as of June 6, 2021 </p>
+            <p>These coding skills are mentioned either as an <strong>advantage</strong> for the job or as a <strong>requirement</strong> </p>
+            <table class="content-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Name</th>
+                  <th>Number of Job ads</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>REST API</td>
+                  <td>2004</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Javascript</td>
+                  <td>1148</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Java</td>
+                  <td>1044</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>React Native</td>
+                  <td>990</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>AWS</td>
+                  <td>854</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Python</td>
+                  <td>842</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Docker</td>
+                  <td>787</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>React.js</td>
+                  <td>762</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Kubernetes</td>
+                  <td>689</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Golang</td>
+                  <td>598</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>HTML</td>
+                  <td>567</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>SQL</td>
+                  <td>562</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Typescript</td>
+                  <td>557</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>CSS</td>
+                  <td>490</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Node.js</td>
+                  <td>457</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Angular</td>
+                  <td>432</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>C#</td>
+                  <td>371</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Azure</td>
+                  <td>366</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>C++</td>
+                  <td>362</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>postgreSQL</td>
+                  <td>329</td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>mySQL</td>
+                  <td>305</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>PHP</td>
+                  <td>301</td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>Kotlin</td>
+                  <td>288</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>Google Cloud</td>
+                  <td>283</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>Vue</td>
+                  <td>256</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>MongoDB</td>
+                  <td>211</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>Swift</td>
+                  <td>169</td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>Ruby</td>
+                  <td>166</td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td>Redux</td>
+                  <td>145</td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>Django</td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>Ruby on Rails</td>
+                  <td>125</td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>Webpack</td>
+                  <td>106</td>
+                </tr>
+                <tr>
+                  <td>33</td>
+                  <td>Rust</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>34</td>
+                  <td>Perl</td>
+                  <td>51</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
