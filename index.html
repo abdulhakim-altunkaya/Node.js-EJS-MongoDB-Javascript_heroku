@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style media="screen">
+      html {
+        width: 100%;
+        height: 100%;
+      }
+
+      .content{
+        display: flex;
+        display: block;
+        height: 10%;
+        margin: 5px;
+        border: 2px solid blue;
+        padding: 3px;
+      }
+      #btnStart, #btnStop {
+        border: 1px solid red;
+        cursor: pointer;
+        margin: 3px;
+        border-radius: 2px;
+      }
+      .ballsArea {
+        background: #fbc9a6;
+        height: 90vmin;
+        display: flex;
+      }
+
+      #ball1 {
+        margin: 5px;
+        width:70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 3px solid #f33714;
+        position: relative;
+        animation-name: move;
+        animation-fill-mode: forwards;
+      }
+
+        #ball1 {
+          background: lightGreen;
+          animation-duration: 6s;
+        }
+
+
+      @keyframes move {
+        0% {top: 0px; left:0;}
+        20% {top: 400px; left:0;}
+        40% {top: 400px; left:500px;}
+        60% {top: 0px; left:500px;}
+        100% {top: 0px; left:0px;}
+
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+          <span id="btnStart" onclick="startGame()">Start Game</span>
+          <span id="btnStop" onclick="stopGame()">Stop the Game</span>
+    </div>
+    <div id="ballsArea" class="ballsArea">
+
+    </div>
+
+
+    <script>
+    function startGame() {
+      var span1 = document.createElement("span");
+      span1.setAttribute("id", "ball1");
+      var parentElement = document.getElementById("ballsArea");
+      parentElement.appendChild(span1);
+    }
+
+    function stopGame () {
+    }
+
+    </script>
+
+  </body>
+</html>
