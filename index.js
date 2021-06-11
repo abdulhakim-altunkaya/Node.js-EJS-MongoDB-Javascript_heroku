@@ -8,7 +8,7 @@ app.get("/", function(req, res){
 app.get("/test", function(req, res){
   res.sendFile(path.join(__dirname, '/test.html'));
 });
-app.get("/coding-languages", function(req, res){
+app.get("/coding-skills", function(req, res){
   res.sendFile(path.join(__dirname, '/coding-languages.html'));
 });
 app.get("/home", function(req, res){
