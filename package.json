@@ -5,17 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "build": "ng build",
-    "postinstall": "ng build",
-    "heroku-postbuild": "ng build --prod"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "ngbuild": "^1.0.2",
-    "postinstall": "^0.7.0"
+    "express": "^4.17.1"
   }
 }
