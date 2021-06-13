@@ -4,6 +4,7 @@ const app = express();
 
 app.use(express.static('assets'))
 app.set("view engine", "ejs");
+app.use("/assets", express.static("static"));
 
 app.get("/", function(req, res){
   res.sendFile(path.join(__dirname, '/pages/index.html'));
