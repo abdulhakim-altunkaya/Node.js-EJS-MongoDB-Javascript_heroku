@@ -18,7 +18,7 @@ app.get("/coding-skills", function(req, res){
 app.get("/home", function(req, res){
   res.send("It is very very very really working dude");
 });
-app.get("/ejs", function(req, res){
+app.get("/ejs1", function(req, res){
   res.render("ejs1");
 });
 
