@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /*Lobster*/
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');/*Maven Pro*/
+
+@media screen and (max-width: 960px) {
+  html {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new_upperBar{
+    width:100%;
+    background-color: lightBlue;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .new_colorBar{
+    width:100%;
+    background-color: red;
+    height: 1vh;
+    margin-bottom:7px;
+    display: flex;
+    flex-direction: row;
+  }
+  .new_colorBar #color1{
+    flex-basis: 25%;
+    background-color: #00cc00;
+  }
+  .new_colorBar #color2{
+    flex-basis: 25%;
+    background-color: #ff0000;
+  }
+  .new_colorBar #color3{
+    flex-basis: 25%;
+    background-color: #0000ff;
+  }
+  .new_colorBar #color4{
+    flex-basis: 25%;
+    background-color: #ffff00;
+  }
+
+
+  .new_main{
+    background-color: white;
+    width: 80%;
+    border: none;
+    outline: none;
+    box-shadow:
+      0 -6px white,
+      0 6px white,
+      -15px 0 4px -3px #9ecaed,
+      15px 0 4px -3px #9ecaed;
+  }
+  #logo-link {
+    text-decoration: none;
+    color: black;
+  }
+  #logo {
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: "Lobster";
+    text-shadow:
+    -2px -2px 0 #ffffff,
+    2px -2px 0 #ffffff,
+    -2px 2px 0 #ffffff,
+    2px 2px 0 #ffffff;
+  }
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    font-family: "Maven Pro";
+    font-size: 16px;
+  }
+
+  .dropdown-content{
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    margin-left: 10px;
+    border-bottom: solid 6px lightBlue;
+    margin-bottom: 0;
+  }
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border:solid 1px lightBlue;
+  }
+  #menu_button:active .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:active {
+    background-color: #00b362;
+  }
+}
