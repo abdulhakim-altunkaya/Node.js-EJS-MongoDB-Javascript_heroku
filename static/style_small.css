@@ -53,6 +53,9 @@
 
   .new_main{
     background-color: white;
+    font-family: "Maven Pro";
+    padding: 12px;
+    font-size: 18px;
     width: 80%;
     border: none;
     outline: none;
@@ -92,7 +95,7 @@
     position: absolute;
     z-index: 1;
     display: none;
-    margin-left: 10px;
+    margin-left: 11px;
     border-bottom: solid 6px lightBlue;
     margin-bottom: 0;
   }
@@ -103,10 +106,42 @@
     display: block;
     border:solid 1px lightBlue;
   }
-  #menu_button:active .dropdown-content {
-    display: block;
-  }
   .dropdown-content a:active {
     background-color: #00b362;
+  }
+
+  /*TABLE SECTION IN CODING-SKILLS*/
+  .content-table{
+    border-collapse: collapse;
+    margin:25px 0;
+    font-size: 0.99em;
+    min-width: 400px;
+  }
+  .content-table thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;/*If we dont set this, border radius might not work sub cell*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .content-table th, .content-table td {
+    padding: 12px 15px;
+  }
+  .content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+  }
+  /*here we target all rows except the ones with even number*/
+  .content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+  }
+  /*here we target last row, to change its bottom border properties*/
+  .content-table tbody tr:last of type {
+    border-bottom: 2px solid #009879;
+  }
+  .content-table tbody tr:hover {
+    background-color: #00b362;
+    cursor: pointer;
   }
 }
