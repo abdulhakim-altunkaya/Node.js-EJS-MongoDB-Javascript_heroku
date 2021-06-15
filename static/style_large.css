@@ -21,14 +21,14 @@
   .new_upperBar{
     width:100%;
     background-color: lightBlue;
-    height: 10%;
+    height: 9vh;
     display: flex;
     flex-direction: row;
   }
   .new_colorBar{
     width:100%;
     background-color: red;
-    height: 3%;
+    height: 1vh;
     margin-bottom:7px;
     display: flex;
     flex-direction: row;
@@ -54,6 +54,7 @@
   .new_main{
     background-color: white;
     font-family: "Maven Pro";
+    height: 90vh;
     padding: 12px;
     font-size: 20px;
     width: 80%;
