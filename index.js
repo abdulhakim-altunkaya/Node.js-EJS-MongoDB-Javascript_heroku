@@ -13,7 +13,7 @@ app.get("/test", function(req, res){
   res.sendFile(path.join(__dirname, '/pages/test.html'));
 });
 app.get("/coding-skills", function(req, res){
-  res.sendFile(path.join(__dirname, '/pages/coding-skills.html'));
+  res.render("coding");
 });
 app.get("/home", function(req, res){
   res.send("It is very very very really working dude");
