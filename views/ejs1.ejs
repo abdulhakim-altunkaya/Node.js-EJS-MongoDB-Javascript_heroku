@@ -2,16 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>NODE JS GOING FINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style media="screen"></style>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 961px)" type="text/css" href="/assets/style_large.css">
+    <link rel="stylesheet" media="screen and (max-width: 960px)" type="text/css" href="/assets/style_small.css">
+    <title></title>
   </head>
   <body>
-    <h1>website served with EJS</h1>
-    <h2>welcome </h2>
-    <p>CONGRATULATIONS, GET RICH OR DIE TRYING</p>
-    <a href="/coding-skills">coding skills page, will it open?????</a>
-    <br>
-    <img src="/assets/icon.png" alt="test image">
+    <%- include("./views/partial_1.ejs") %>
   </body>
 </html>
