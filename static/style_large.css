@@ -24,6 +24,7 @@
     height: 9vh;
     display: flex;
     flex-direction: row;
+    display: block;
   }
   .new_colorBar{
     width:100%;
@@ -32,6 +33,7 @@
     margin-bottom:7px;
     display: flex;
     flex-direction: row;
+    display: block;
   }
   .new_colorBar #color1{
     flex-basis: 25%;
@@ -54,7 +56,6 @@
   .new_main{
     background-color: white;
     font-family: "Maven Pro";
-    height: 90vh;
     padding: 12px;
     font-size: 20px;
     width: 80%;
