@@ -13,7 +13,7 @@ app.get("/test", function(req, res){
   res.send("test");
 });
 app.get("/coding-skills", function(req, res){
-  res.render("ejs1");
+  res.render("coding");
 });
 app.get("/home", function(req, res){
   res.send("It is very very very really working dude");
