@@ -75,14 +75,14 @@
     margin-left: 20px;
     font-size: 40px;
     font-family: "Lobster";
+    width: 100%;
     text-shadow:
     -2px -2px 0 #ffffff,
     2px -2px 0 #ffffff,
     -2px 2px 0 #ffffff,
     2px 2px 0 #ffffff;
   }
-  .corner_buttons{
-    position: relative;
+  #home_button{
     float: right;
   }
 
@@ -92,7 +92,7 @@
     display: inline-block;
     margin-left: 5px;
     font-family: "Maven Pro";
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .dropdown-content{
