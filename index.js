@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.use("/assets", express.static("static"));
 
 app.get("/", function(req, res){
-  res.sendFile(path.join(__dirname, '/pages/index.html'));
+  res.render("index");
 });
 app.get("/coding-skills", function(req, res){
   res.render("a1_coding");
@@ -27,8 +27,11 @@ app.get("/broken-image-nodejs", function(req, res){
 app.get("/ejs1", function(req, res){
   res.render("ejs1");
 });
-app.get("/test", function(req, res){
+app.get("/test1", function(req, res){
   res.send("It is very very very really working dude");
+});
+app.get("/test", function(req, res){
+  res.sendFile(path.join(__dirname, '/pages/test.html'));
 });
 
 
