@@ -54,9 +54,10 @@
   .new_main{
     background-color: white;
     font-family: "Maven Pro";
-    padding: 12px;
     height: 90%;
-    font-size: 18px;
+    overflow-y: auto;
+    padding: 12px;
+    font-size: 19px;
     width: 80%;
     border: none;
     outline: none;
@@ -85,7 +86,7 @@
     display: inline-block;
     margin-left: 5px;
     font-family: "Maven Pro";
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .dropdown-content{
@@ -115,7 +116,7 @@
     border-collapse: collapse;
     margin:25px 0;
     font-size: 0.99em;
-    min-width: 400px;
+    width: 90%;
   }
   .content-table thead tr{
     background-color: #009879;
@@ -124,10 +125,10 @@
     font-weight: bold;
     border-radius: 5px 5px 0 0;
     overflow: hidden;/*If we dont set this, border radius might not work sub cell*/
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   }
   .content-table th, .content-table td {
-    padding: 12px 15px;
+    padding: 10px 13px;
   }
   .content-table tbody tr{
     border-bottom: 1px solid #dddddd;
