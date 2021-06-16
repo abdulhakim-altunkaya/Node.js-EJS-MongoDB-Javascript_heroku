@@ -148,14 +148,21 @@
 
 
 
-  /* Hide scrollbar for Chrome, Safari and Opera */
-.new_main::-webkit-scrollbar {
-    display: none;
-}
+    /* Hide scrollbar for Chrome, Safari and Opera */
+  .new_main::-webkit-scrollbar {
+      display: none;
+  }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.new_main {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .new_main {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  #home_button {
+    position:absolute;
+    top:15px;
+    right:15px;
+    transform: scale(2);
+  }
 }
