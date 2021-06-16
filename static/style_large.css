@@ -81,11 +81,9 @@
     -2px 2px 0 #ffffff,
     2px 2px 0 #ffffff;
   }
-  #home_button{
-    font-size: 40px;
-    top: 5px;
-    right: 5px;
-    position: absolute;
+  .corner_buttons{
+    position: relative;
+    float: right;
   }
 
 
