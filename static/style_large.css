@@ -83,7 +83,9 @@
     2px 2px 0 #ffffff;
   }
   #home_button{
-    float: right;
+    position: absolute;
+    right: -10px;
+    top: -10;
   }
 
 
