@@ -107,7 +107,7 @@
     display: block;
     border:solid 1px lightBlue;
   }
-  .dropdown span:hover .dropdown-content {
+  .dropdown:hover .dropdown-content {
     display: block;
   }
   .dropdown-content a:hover {
@@ -166,7 +166,8 @@
     position:absolute;
     top:15px;
     right:15px;
-    transform: scale(2);
+    transform: scale(1.8);
+    pointer-events: none;
   }
 
 }
