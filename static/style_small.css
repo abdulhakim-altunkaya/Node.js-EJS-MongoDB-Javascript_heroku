@@ -161,8 +161,8 @@
 
   #home_button {
     position:absolute;
-    top:15px;
-    right:15px;
-    transform: scale(2);
+    top:12px;
+    right:12px;
+    transform: scale(1.2);
   }
 }
