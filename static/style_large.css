@@ -107,7 +107,7 @@
     display: block;
     border:solid 1px lightBlue;
   }
-  #logo:hover .dropdown-content {
+  .dropdown span:hover .dropdown-content {
     display: block;
   }
   .dropdown-content a:hover {
