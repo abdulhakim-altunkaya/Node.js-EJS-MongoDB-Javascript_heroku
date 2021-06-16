@@ -81,6 +81,11 @@
     -2px 2px 0 #ffffff,
     2px 2px 0 #ffffff;
   }
+  #iconHome{
+    font-size: 40px;
+    float: left;
+  }
+
 
   .dropdown{
     position: relative;
