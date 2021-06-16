@@ -81,9 +81,9 @@
     -2px 2px 0 #ffffff,
     2px 2px 0 #ffffff;
   }
-  #iconHome{
+  #home_button{
     font-size: 40px;
-    float: left;
+    float: right;
   }
 
 
