@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include("./partials/partial_2") %>
+  </head>
+  <body>
+    <%- include("./partials/partial_1") %>
+
+    <div class="new_main">
+      <form id="contactForm" action="/form" method="post">
+        <label for="input1">Your Name: </label>
+        <input type="text" name="input1" id="input1" required>
+        <button type="button" name="button">Submit</button>
+      </form>
+      <p> Your Beautiful Name: <%= person.input1 %></p>
+    </div>
+
+
+  </body>
+</html>

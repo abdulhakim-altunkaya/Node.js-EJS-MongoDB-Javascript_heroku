@@ -2,8 +2,10 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+
 app.use(express.static('assets'));
 app.set("view engine", "ejs");
+app.use(express.urlencoded({extended: true}));
 app.use("/assets", express.static("static"));
 
 app.get("/", function(req, res){
@@ -32,6 +34,13 @@ app.get("/test1", function(req, res){
 });
 app.get("/test", function(req, res){
   res.sendFile(path.join(__dirname, '/pages/test.html'));
+});
+app.get("/form", function(req, res){
+  res.render("comment");
+});
+app.post("/form", function(req, res){
+  var details = req.body;
+  res.render("comment", {person: details});
 });
 
 
