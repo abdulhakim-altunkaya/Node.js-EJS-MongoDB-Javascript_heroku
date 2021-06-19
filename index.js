@@ -1,7 +1,16 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const PersonalModel = require("models/personalInformation");
 
+const mongoose = require('mongoose')
+const url = "mongodb+srv://abdulhakim:Konsolosluk2030-.@cluster0.iwpl2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const connectionParams = {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+}
+mongoose.connect(url, connectionParams);
 
 app.use(express.static('assets'));
 app.set("view engine", "ejs");
@@ -41,9 +50,12 @@ app.get("/contact", function(req, res){
 
 app.post("/contact", function(req, res){
   console.log(req.body);
-  var details = req.body
-  res.render("comment2", {personal_data: details});
-})
+  var details = req.body;
+  PersonalModel.create(details).then(function(){
+    res.render("comment2", {personal_data: details});
+  });
+
+});
 
 
 
