@@ -107,7 +107,7 @@
     display: block;
     border:solid 1px lightBlue;
   }
-  .dropdown:hover .dropdown-content {
+  .heading:hover .dropdown-content {
     display: block;
   }
   .dropdown-content a:hover {
