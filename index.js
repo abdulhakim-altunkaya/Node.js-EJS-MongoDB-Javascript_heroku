@@ -38,10 +38,7 @@ app.get("/test", function(req, res){
 app.get("/form", function(req, res){
   res.render("comment");
 });
-app.post("/form", function(req, res){
-  var details = req.body;
-  res.render("comment", {person: details});
-});
+
 
 
 
