@@ -3,14 +3,16 @@ const path = require("path");
 const app = express();
 const PersonalModel = require("models/personalInformation");
 
-const mongoose = require('mongoose')
-const url = "mongodb+srv://abdulhakim:Konsolosluk2030-.@cluster0.iwpl2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const connectionParams = {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true
-}
-mongoose.connect(url, connectionParams);
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://abdulhakim:Konsolosluk2020-.@cluster0.iwpl2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
 
 app.use(express.static('assets'));
 app.set("view engine", "ejs");
