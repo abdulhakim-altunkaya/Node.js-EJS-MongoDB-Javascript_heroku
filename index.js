@@ -35,13 +35,15 @@ app.get("/test1", function(req, res){
 app.get("/test", function(req, res){
   res.sendFile(path.join(__dirname, '/pages/test.html'));
 });
-app.get("/form", function(req, res){
+app.get("/contact", function(req, res){
   res.render("comment");
-});
-app.post("/form", function(req, res){
-  var details = req.body;
-  res.render("commentResult", {person: details});
-});
+})
+
+app.post("/contact", function(req, res){
+  console.log(req.body);
+  var details = req.body
+  res.render("comment2", {personal_data: details});
+})
 
 
 

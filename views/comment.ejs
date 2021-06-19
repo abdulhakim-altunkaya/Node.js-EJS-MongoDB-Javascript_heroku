@@ -7,12 +7,13 @@
     <%- include("./partials/partial_1") %>
 
     <div class="new_main">
-      <form id="contactForm" action="/form" method="post">
-        <label for="input1">Your Name: </label>
+      <form id="contact_form" action="/contact" method="post">
+        <label for="input1">Enter your name</label>
         <input type="text" name="input1" id="input1" required>
-        <button type="button" name="button">Submit</button>
+        <label for="input2">Enter your city</label>
+        <input type="text" name="input2" id="input2" required>
+        <button>Submit</button>
       </form>
-      <p> Your Beautiful Name: </p>
     </div>
 
 
