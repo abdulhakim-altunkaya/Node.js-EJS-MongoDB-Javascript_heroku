@@ -1,23 +1,16 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const PersonalModel = require("models/personalInformation");
+const PersonalModel = require("./models/personalInformation");
+const connectDB = require("./connect");
 
-
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://abdulhakim:Konsolosluk2020-.@cluster0.iwpl2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
-
-
+connectDB();
 app.use(express.static('assets'));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({extended: true}));
 app.use("/assets", express.static("static"));
+
+
 
 app.get("/", function(req, res){
   res.render("index");
@@ -51,7 +44,6 @@ app.get("/contact", function(req, res){
 })
 
 app.post("/contact", function(req, res){
-  console.log(req.body);
   var details = req.body;
   PersonalModel.create(details).then(function(){
     res.render("comment2", {personal_data: details});
