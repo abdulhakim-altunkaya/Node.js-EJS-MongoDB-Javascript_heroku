@@ -1,12 +1,16 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const PersonalModel = require("./models/personalInformation");
+const connectDB = require("./connect");
 
-
+connectDB();
 app.use(express.static('assets'));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({extended: true}));
 app.use("/assets", express.static("static"));
+
+
 
 app.get("/", function(req, res){
   res.render("index");
@@ -40,10 +44,12 @@ app.get("/contact", function(req, res){
 })
 
 app.post("/contact", function(req, res){
-  console.log(req.body);
-  var details = req.body
-  res.render("comment2", {personal_data: details});
-})
+  var details = req.body;
+  PersonalModel.create(details).then(function(){
+    res.render("comment2", {personal_data: details});
+  });
+
+});
 
 
 
